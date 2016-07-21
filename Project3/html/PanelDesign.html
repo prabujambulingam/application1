@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+
+    <span class="glyphicon glyphicon-{{componentInfo.icon}} icon-left"> </span>
+    <span class="panel-headername"> {{componentInfo.head}} </span>
+    <span class="panel-title">
+		<a data-toggle="collapse" data-parent="#accordion" href="#{{componentInfo.ComponentName}}">
+		<span class="glyphicon glyphicon-plus icon-right" ng-show="showplus" ng-click="Signtoggle()"> </span>
+    <span class="glyphicon glyphicon-minus icon-right" ng-show="showminus" ng-click="Signtoggle()"> </span>
+    </a>
+    </span>
+  </div>
+  <div id="{{componentInfo.ComponentName}}" class="panel-collapse collapse in">
+    <div class="panel-body">
+      <panel-content  Info="{{componentInfo.ComponentName}}"> </panel-content>
+    </div>
+  </div>
+
+</div>
